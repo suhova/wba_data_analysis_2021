@@ -17,8 +17,8 @@ services:
       - ./clickhouse:/var/lib/clickhouse
       - ./clickhouse/init/:/docker-entrypoint-initdb.d
     ports:
-      - "8769:9000"
-      - "8767:8123"
+      - "9000:9000"
+      - "8123:8123"
 
   redis:
     image: redis:latest
